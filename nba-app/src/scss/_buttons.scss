@@ -1,0 +1,55 @@
+@mixin button {
+    background-color:transparent;
+    color: $txtColor;
+    font-weight: 700;
+    display: block;
+    &:hover{
+        background-color: $txtColor;
+        color: $bgColor1;
+    }
+}
+.fwdBtn{
+    @include button;
+    height: 55px;
+    width: 260px;
+    margin-top: 0.5rem;
+    @include medium {
+        height: 60px;
+        width: 300px;
+    }
+    font-size: 28px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.showBtn{
+    @include button;
+    height: 70px;
+    width: 90%;
+    font-size: 20px;
+    @include medium{
+        font-size: 50px;
+        height: 25%;
+        width: 100%;
+        }
+    @include large {
+        font-size: 70px;
+        height: 25%;
+    }
+}
+
+.pwdBtn {
+    @include button;
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $bgColor1;   
+     @include medium{
+        height: 60px;
+        width:100px;
+        font-size: 25px;
+        }
+}

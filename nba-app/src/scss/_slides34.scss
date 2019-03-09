@@ -1,0 +1,50 @@
+@import 'numberInput';
+
+.slide3, .slide4 {
+    height:90%;
+    width:100vw;
+    display: inline-block;
+    color: white;
+    overflow-y: scroll;
+}
+.statsContainer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include medium {
+        flex-direction: row;
+    }
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 0.3rem;
+    border: 2px solid white;
+    width: 200px;
+    min-height: 120px;
+    @include medium{
+        margin: 1em;
+        width: 300px;
+        min-height:200px;
+    }
+    @include large {
+        margin: 2rem;
+    }
+    span {
+        margin: 0.3rem;
+        font-size: 20px;
+        text-align: center;
+        @include medium {
+            margin: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 30px;
+        }
+    }
+    input{
+    margin-left: 20px;
+    }
+    }
+}

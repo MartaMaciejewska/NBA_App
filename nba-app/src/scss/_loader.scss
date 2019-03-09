@@ -1,0 +1,20 @@
+
+.loader {
+    width: 10em;
+    height: 10em;
+    background-image: url("../images/bball.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: rotate 3s infinite;
+}
+@keyframes rotate {
+    100% {
+        background-position: 100%;
+    }
+
+}

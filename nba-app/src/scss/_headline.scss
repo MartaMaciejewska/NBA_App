@@ -1,0 +1,39 @@
+@mixin headline {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin: 1em 0;
+}
+
+.headline {
+    @include headline;
+    font-size: 30px;
+    @include medium{
+    font-size: 40px;
+    }
+    @include large {
+    font-size: 50px;
+    }
+}
+
+.headline2{
+    @include headline;
+    font-size: 25px;
+    @include medium{
+        font-size: 40px;
+        }
+        @include large {
+        font-size: 45px;
+        }
+}
+
+.headlineSm{
+    @include headline;
+    font-size: 16px;
+    @include medium{
+        font-size: 20px;
+        }
+        @include large {
+        font-size: 27px;
+        }
+}

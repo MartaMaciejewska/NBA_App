@@ -1,0 +1,20 @@
+.dataBox {
+    color:$bgColor1;
+    font-size: 1em;
+    background-color:white;
+    z-index: 2;
+    border:1px solid $bgColor1;
+    text-align: center;
+    position:absolute;
+    right:0;
+    width:100%;
+    top: 1em;
+    padding:0.3%;
+    @include medium {
+    width: 30%;
+    top: 2em;
+    }
+    @include large {
+        top: 3em;
+    }
+}

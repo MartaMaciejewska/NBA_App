@@ -1,0 +1,58 @@
+
+.slide2 {
+    width:100vw;
+    display: inline-block;
+    overflow-y: scroll;
+    #playersContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .playerBox {
+        height: 150px;
+        min-width: 250px;
+            @include medium {
+            height: 200px;
+            min-width: 300px;
+            }
+
+        display: inline-block;
+        border: 2px solid white;
+        margin: 2rem;
+        background-size: cover;
+        position: relative;
+        .hoverHeadline {
+            height: 25%;
+            width:100%;
+            position: absolute;
+            left:0;
+            bottom:0;
+            background-color:rgba(255,255,255,0.5);
+            z-index:-2;
+            .playerName{
+                font-size: 22px;
+                color: rgb(7, 7, 41);
+                margin-bottom:0;
+                &:after {
+                    content: "";
+                    height: 8px;
+                    width: 70%;
+                    background-color: $bgColor2;
+                    position: absolute;
+                    bottom: 10%;
+                    left:0;
+                }
+            }
+        }
+        &:hover{
+            border: 5px solid white;
+            .hoverHeadline{
+                z-index:1;
+            }
+        }
+     }
+}
+}
+        
+
+    

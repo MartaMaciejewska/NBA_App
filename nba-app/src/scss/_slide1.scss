@@ -1,0 +1,58 @@
+.slide1 {
+    height:80%;
+    width:100vw;
+    display: inline-block;
+    p {
+    color:white;
+    font-size: 30px;
+    margin-bottom: 1em;
+    @include medium {
+        font-size: 70px;
+    }
+    @include large {
+        font-size: 100px;
+    }
+    margin: 0,5rem;
+    font-weight: 700;
+    }
+    .leftText {
+        text-align: center;
+        @include medium {
+            text-align: left;
+            margin-left:5%;
+
+        }
+    }
+    .rightText {
+        text-align: center;
+        margin-bottom:0;
+        @include medium {
+            text-align: right;
+            margin-right: 5%;
+        }
+    }
+    .logoContainer{
+        margin-top:0;
+        @include medium {
+        margin-left: 13%
+        };
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @include medium {
+            align-items: left;
+            justify-content: left;
+            flex-direction: row;
+        }
+        .logo {
+            height: 20rem;
+            width: 9.5rem;
+            @include medium {
+                margin-right: 2rem;
+            }
+            margin: 2rem;
+        }
+    }
+}
